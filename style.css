@@ -4047,7 +4047,7 @@ ul.gdlr-twitter-widget li .gdlr-twitter {
 
 /* BLOG */
 article {
-  margin-bottom: 60px; }
+  margin-bottom: 120px; }
 
 .post-header {
   max-width: 700px;
@@ -4069,7 +4069,7 @@ article {
   color: #444; }
 
 .gdlr-blog-content table {
-  margin-bottom: 120px; }
+  margin-bottom: 20px; }
   .gdlr-blog-content table tr th {
     padding: 28px 0; }
 
