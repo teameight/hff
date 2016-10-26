@@ -29,14 +29,15 @@
 
 			function enquque_styles(){
 				global $wp_styles;
+				$version = 3.8;
 				
-				wp_enqueue_style( 'style', get_stylesheet_uri() );
+				wp_enqueue_style( 'style', get_stylesheet_uri(), array(), $version );
 				foreach( $this->script_list['style'] as $script_slug => $script_url ){
 					if( preg_match('#([^!]+)!(.+)#', $script_slug, $match) ){
-						wp_enqueue_style($match[1], $script_url);
+						wp_enqueue_style($match[1], $script_url, array(), $version);
 						$wp_styles->add_data($match[1], 'conditional', $match[2]);
 					}else{
-						wp_enqueue_style($script_slug, $script_url);
+						wp_enqueue_style($script_slug, $script_url, array(), $version);
 					}					
 				}
 			}

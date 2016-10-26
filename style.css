@@ -2,18 +2,6 @@
 /* colors */
 /* FONTS */
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:r,i,b");
-/*
-Theme Name: Housing Families First
-Theme URI: http://www.housingfamiliesfirst.org
-Description: Every family deserves a home.
-Author: Boulevard Creative
-Author URI: http://www.boulevardrva.com
-Version: 1.04
-License: 
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: white, light, Green, two-columns, fluid-layout, custom-background, custom-colors, featured-images, theme-options
-Text Domain: gdlr_translate
-*/
 /*--- reset ---*/
 /*--- reset5 Â© 2011 opensource.736cs.com MIT ---*/
 html, body, div, span, applet, object, iframe,
@@ -4081,6 +4069,9 @@ article {
   color: #444; }
 
 .gdlr-blog-content table {
-  margin-bottom: 60px; }
+  margin-bottom: 120px; }
   .gdlr-blog-content table tr th {
     padding: 28px 0; }
+
+/*
+stuff*/
