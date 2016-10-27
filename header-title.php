@@ -16,10 +16,17 @@
 
 	<?php if( is_page() && (empty($gdlr_post_option['show-title']) || $gdlr_post_option['show-title'] != 'disable') ){ ?>
 	<?php $page_background = ''; ?>
+	<?php
+		$page_displaytitle = get_the_title();
+		if(is_page( "Friends & Neighbors") ){
+			$page_displaytitle = '<img src="'. get_stylesheet_directory_uri() .'/images/friendsandneighborslogo-2.png" alt="'.$page_displaytitle.'"/>';
+		};
+
+	?>
 		<div class="gdlr-page-title-wrapper" <?php echo $header_background; ?> >
 			<div class="gdlr-page-title-container container" >
 				<div class="gdlr-page-title-inner" >
-					<h1 class="gdlr-page-title"><?php the_title(); ?></h1>
+					<h1 class="gdlr-page-title"><?php echo $page_displaytitle; ?></h1>
 					<?php if( !empty($gdlr_post_option['page-caption']) ){ ?>
 					<span class="gdlr-page-caption"><?php echo gdlr_text_filter($gdlr_post_option['page-caption']); ?></span>
 					<?php } ?>
