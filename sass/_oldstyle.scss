@@ -837,18 +837,6 @@ body .ls-v5 .ls-nav-next { right: 20px; }
 .comment-respond .form-submit > input[type="submit"]{ margin-bottom: 0px; margin-top: 20px; }
 	
 /*--- blog ---*/
-.gdlr-blog-thumbnail { position: relative; }
-.gdlr-blog-thumbnail .icon-bullhorn{ margin-right: 9px; }
-.gdlr-blog-thumbnail .gdlr-sticky-banner { position: absolute; bottom: 0px;  
-	font-size: 12px; font-weight: bold; padding: 7px 15px; text-transform: uppercase; }
-
-.gdlr-blog-thumbnail{ background: #000000; }
-.gdlr-blog-thumbnail.gdlr-audio{ background: transparent; }
-.format-gallery .gdlr-blog-thumbnail{ background: transparent; }
-.gdlr-blog-thumbnail > a > img{ 	
-	transition: opacity 300ms; -moz-transition: opacity 300ms;
-	-o-transition: opacity 300ms; -webkit-transition: opacity 300ms; }
-.gdlr-blog-thumbnail > a > img:hover{ opacity: 0.8; filter: alpha(opacity=80); }
 
 .blog-item-wrapper .isotope-item { padding-top: 15px; }
 .gdlr-blog-carousel-item.gdlr-item .gdlr-blog-grid:first-child{ margin-left: 0px; }

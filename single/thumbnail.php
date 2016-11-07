@@ -12,6 +12,9 @@
 				if( is_single() ){
 					echo gdlr_get_image(get_post_thumbnail_id(), $theme_option['post-thumbnail-size'], true);	
 				}else{
+
+					if($post->post_type == 'post') $gdlr_post_settings['thumbnail-size'] = "post-thumbnail-size";
+
 					$temp_option = json_decode(get_post_meta(get_the_ID(), 'post-option', true), true);
 					echo '<a href="' . get_permalink() . '"> ';
 					echo gdlr_get_image(get_post_thumbnail_id(), $gdlr_post_settings['thumbnail-size']);

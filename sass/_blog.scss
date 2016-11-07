@@ -43,5 +43,41 @@ article {
 	}
 
 }
-/*
-stuff*/
+
+
+.gdlr-blog-thumbnail { 
+
+	position: relative;
+	background: transparent; 
+
+	.icon-bullhorn { margin-right: 9px; }
+
+	.gdlr-sticky-banner { 
+		position: absolute; bottom: 0px;  
+		font-size: 12px; 
+		font-weight: bold; 
+		padding: 7px 15px; 
+		text-transform: uppercase; 
+	}
+
+	&.gdlr-audio{ background: transparent; }
+
+
+
+	> a > img { 	
+		
+		transition: opacity 300ms; 
+		-moz-transition: opacity 300ms;
+		-o-transition: opacity 300ms; 
+		-webkit-transition: opacity 300ms;
+		
+		&:hover { 
+			opacity: 0.8; 
+			filter: alpha(opacity=80); 
+		}
+	}
+}
+
+
+.format-gallery .gdlr-blog-thumbnail{ background: transparent; }
+

@@ -2,6 +2,7 @@
 /* colors */
 /* FONTS */
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:r,i,b");
+/* COLORS */
 /*--- reset ---*/
 /*--- reset5 Â© 2011 opensource.736cs.com MIT ---*/
 html, body, div, span, applet, object, iframe,
@@ -2510,39 +2511,6 @@ body .ls-v5 .ls-nav-next {
   margin-top: 20px; }
 
 /*--- blog ---*/
-.gdlr-blog-thumbnail {
-  position: relative; }
-
-.gdlr-blog-thumbnail .icon-bullhorn {
-  margin-right: 9px; }
-
-.gdlr-blog-thumbnail .gdlr-sticky-banner {
-  position: absolute;
-  bottom: 0px;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 7px 15px;
-  text-transform: uppercase; }
-
-.gdlr-blog-thumbnail {
-  background: #000000; }
-
-.gdlr-blog-thumbnail.gdlr-audio {
-  background: transparent; }
-
-.format-gallery .gdlr-blog-thumbnail {
-  background: transparent; }
-
-.gdlr-blog-thumbnail > a > img {
-  transition: opacity 300ms;
-  -moz-transition: opacity 300ms;
-  -o-transition: opacity 300ms;
-  -webkit-transition: opacity 300ms; }
-
-.gdlr-blog-thumbnail > a > img:hover {
-  opacity: 0.8;
-  filter: alpha(opacity=80); }
-
 .blog-item-wrapper .isotope-item {
   padding-top: 15px; }
 
@@ -4073,5 +4041,28 @@ article {
   .gdlr-blog-content table tr th {
     padding: 28px 0; }
 
-/*
-stuff*/
+.gdlr-blog-thumbnail {
+  position: relative;
+  background: transparent; }
+  .gdlr-blog-thumbnail .icon-bullhorn {
+    margin-right: 9px; }
+  .gdlr-blog-thumbnail .gdlr-sticky-banner {
+    position: absolute;
+    bottom: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 15px;
+    text-transform: uppercase; }
+  .gdlr-blog-thumbnail.gdlr-audio {
+    background: transparent; }
+  .gdlr-blog-thumbnail > a > img {
+    transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+    -webkit-transition: opacity 300ms; }
+    .gdlr-blog-thumbnail > a > img:hover {
+      opacity: 0.8;
+      filter: alpha(opacity=80); }
+
+.format-gallery .gdlr-blog-thumbnail {
+  background: transparent; }
